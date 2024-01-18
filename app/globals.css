@@ -25,3 +25,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+button {
+  padding: 8px 16px;
+  border-radius: 8px;
+}

@@ -1,0 +1,95 @@
+export const quiz = {
+  totalQuestions: 15,
+  questions: [
+    {
+      id: 1,
+      question: "Unity3D",
+      answers: ["Game Development", "Software Development", "Both"],
+      correctAnswer: "Game Development",
+    },
+    {
+      id: 2,
+      question: "Web Development (HTML/CSS, JavaScript)",
+      answers: ["Game Development", "Software Development", "Both"],
+      correctAnswer: "Software Development",
+    },
+    {
+      id: 3,
+      question: "Game Physics and Mathematics",
+      answers: ["Game Development", "Software Development", "Both"],
+      correctAnswer: "Game Development",
+    },
+    {
+      id: 4,
+      question: "Performance Optimization",
+      answers: ["Game Development", "Software Development", "Both"],
+      correctAnswer: "Software Development",
+    },
+    {
+      id: 5,
+      question: "Communication",
+      answers: ["Game Development", "Software Development", "Both"],
+      correctAnswer: "Both",
+    },
+    {
+      id: 6,
+      question: "Graphics Programming",
+      answers: ["Game Development", "Software Development", "Both"],
+      correctAnswer: "Game Development",
+    },
+    {
+      id: 7,
+      question: "Object-Oriented Programming (OOP)",
+      answers: ["Game Development", "Software Development", "Both"],
+      correctAnswer: "Both",
+    },
+    {
+      id: 8,
+      question: "User Interface/User Experience (UI/UX)",
+      answers: ["Game Development", "Software Development", "Both"],
+      correctAnswer: "Both",
+    },
+    {
+      id: 9,
+      question: "Database Optimization and Design",
+      answers: ["Game Development", "Software Development", "Both"],
+      correctAnswer: "Software Development",
+    },
+    {
+      id: 10,
+      question: "Problem-solving",
+      answers: ["Game Development", "Software Development", "Both"],
+      correctAnswer: "Both",
+    },
+    {
+      id: 11,
+      question: "JavaScript Frameworks (React, Angular)",
+      answers: ["Game Development", "Software Development", "Both"],
+      correctAnswer: "Software Development",
+    },
+    {
+      id: 12,
+      question: "Multiplayer networking",
+      answers: ["Game Development", "Software Development", "Both"],
+      correctAnswer: "Game Development",
+    },
+    {
+      id: 13,
+      question: "Game Programming",
+      answers: ["Game Development", "Software Development", "Both"],
+      correctAnswer: "Game Development",
+    },
+    {
+      id: 14,
+      question: "Cybersecurity skills",
+      answers: ["Game Development", "Software Development", "Both"],
+      correctAnswer: "Software Development",
+    },
+    {
+      id: 15,
+      question: "Mobile development",
+      answers: ["Game Development", "Software Development", "Both"],
+      correctAnswer: "Both",
+    },
+  ],
+};
