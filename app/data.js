@@ -91,5 +91,5 @@ export const quiz = {
       answers: ["Game Development", "Software Development", "Both"],
       correctAnswer: "Both",
     },
-  ],
+   ],
 };

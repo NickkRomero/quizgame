@@ -4,6 +4,7 @@ import { quiz } from "../data.js";
 import Image from "next/image";
 import Quotes from "../../public/Quotes.svg";
 import arrow from "../../public/arrow.svg";
+import checkmark from "../../public/checkmark.svg";
 
 const page = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -149,28 +150,38 @@ const page = () => {
             </div>
           </div>
         ) : (
-          <div className="quiz-container flex justify-center items-center">
-            <h3>Congratulations Quiz finished!</h3>
+          <div className="quiz-container relative flex flex-col justify-center items-center">
+            <Image
+            priority
+            src={checkmark}
+            alt="Congratulations!"
+            width={300}
+            />
 
-            <div className="flex gap-1 justify-center items-center">
-              <span>
-                {result.correctAnswers}/{questions.length}
-              </span>
-              {questions.map((question, idx) => (
-                <div
-                  key={idx}
-                  className={getColor(
-                    question.answers,
-                    answerIndexes[idx],
-                    question.correctAnswer
-                  )}
-                >
-                  {}
-                </div>
-              ))}
-            </div>
-            <button onClick={() => window.location.reload()}>Try again</button>
+          <h3 className="text-2xl text-center pb-8 pt-0">Congratulations <br/> Quiz finished! </h3>
+
+          <div className="flex gap-1 justify-center items-center">
+            <span>
+              {result.correctAnswers}/{questions.length}
+            </span>
+            <br/>
+            {questions.map((question, idx) => (
+              <div
+                key={idx}
+                className={getColor(
+                  question.answers,
+                  answerIndexes[idx],
+                  question.correctAnswer
+                )}
+              >
+                {}
+              </div>
+            ))}
           </div>
+
+          <button className="mt-8 bg-blue" onClick={() => window.location.reload()}>Try again</button>
+        </div>
+
         )}
       </div>
     </div>
